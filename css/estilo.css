@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+main::after{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+}
+.personagem{
+    display: none;
+    height: 100vh;
+}
+
+.personagem.selecionado {
+    display: block;
+    /*deixa a imagem que o dev quer na hora de abrir o site*/
+}
+
+.personagem .imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.conteudo{
+    position: absolute;
+    top: -60px;
+    left: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 480px;
+}
+
+.conteudo .nome-manu{
+    color: #ffffff;
+
+    font-family: "Secular One";
+    font-size: 48px;
+   font-weight: 400;
+   margin-bottom: 20px;
+}
+
+.conteudo .descricao{
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.conteudo .logo{
+    background-image: url("../manu-niver-site/Manuela-Logo3.png");
+    top: 1000px;
+    background-size: cover;
+    height: 150px;
+    width: 230px;
+    margin-bottom: 35px;
+   
+   
+}
+.botoes{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;/*Separar um elemento do outro*/
+    background-color:rgba(0, 0, 0, 0.3); ;
+}
+.botoes .botao {
+    border:none;/*remover a borda*/
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.botoes .botao img{
+    border-radius: 50%;
+
+}
+.botoes .botao.selecionado{
+    transform: scale(1.1);/*serve pra ficar maior o tamanho do elemento*/
+    box-shadow: 0 0 10px #d9d9d9;
+    
+}
+
